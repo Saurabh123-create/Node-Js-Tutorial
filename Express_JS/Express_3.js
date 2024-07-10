@@ -4,7 +4,6 @@ const path = require('path');
 const pathname= path.join(__dirname) 
 
 app.get('',(req,res)=>{
-    // res.send(`Inserted Text`);
     res.sendFile( `${pathname}/sendFile.html`);
 })
 app.get('/help',(req,res)=>{
